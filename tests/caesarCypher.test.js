@@ -1,3 +1,5 @@
-function Caesar(str, key) {
-    if(!(typeof str === 'string' && key >= 0 && key <= 26)) //or maybe just typeof number. also check for symbols and numbers in string at some point
-}
+const caesar = require('../functions/caesarCypher');
+
+test('simple case', () => {
+  expect(caesar('defend the east wall of the castle', 1)).toBe('efgfoe uif fbtu xbmm pg uif dbtumf');
+});
